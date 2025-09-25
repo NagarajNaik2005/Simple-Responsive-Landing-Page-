@@ -9,8 +9,7 @@ A clean and modern **responsive landing page** built using **HTML** and **CSS**,
 - Fully **responsive design** for all screen sizes  
 - Simple and professional **layout**  
 - Smooth **navigation links** to different sections  
-- **Logo** with rounded corners for a modern look  
-- Clean **typography** and professional **color scheme**  
+- **Logo** with rounded corners for a modern look    
 
 ## Technologies Used
 
