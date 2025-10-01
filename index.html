@@ -3,53 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Landing Page</title>
-  <link rel="stylesheet" href="./styles.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Responsive Website with Hamburger Menu</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <header id="h">
-    <div class="logo">
-      <img src="imgi_133_abstract-logo-flame-shape_1043-44.png" alt="Logo">
-    </div>
-
-    <!-- Mobile menu toggle -->
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
-
+  <header>
+    <div class="logo">MyWebsite</div>
     <nav>
-      <ul class="nav-links">
-        <li><a href="#h">Home</a></li>
-        <li><a href="#f">Features</a></li>
+      <ul id="nav-links">
+        <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#fo">Contact</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
+      <div class="hamburger" id="hamburger">
+        &#9776; <!-- Unicode hamburger icon -->
+      </div>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero" id="f">
-    <div class="hero-content">
-      <h1 class="header">Build Smarter Websites</h1>
-      <p class="para">We design responsive and modern websites that help your business stand out online.</p>
-      <a href="#" class="btn">Get Started</a>
-    </div>
-  </section>
+  <main>
+    <section class="hero">
+      <h1>Welcome to My Responsive Website</h1>
+      <p>This website is mobile-friendly using CSS media queries and a hamburger menu.</p>
+      <button>Get Started</button>
+    </section>
 
-  <!-- Footer -->
-  <footer id="fo">
-    <p>© 2025 Company. All rights reserved.</p>
-    <div class="socials">
-  
-    <a href="" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-    </div>
+    <section class="cards">
+      <div class="card">
+        <h2>Card 1</h2>
+        <p>Some description for card 1.</p>
+      </div>
+      <div class="card">
+        <h2>Card 2</h2>
+        <p>Some description for card 2.</p>
+      </div>
+      <div class="card">
+        <h2>Card 3</h2>
+        <p>Some description for card 3.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MyWebsite. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Toggle menu on mobile
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
 
 </body>
 </html>
-
